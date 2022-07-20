@@ -31,20 +31,19 @@ services:
     ports:
       - 8080:8080
 
-  postgresdb:
-    hostname: postgres_chat
-    container_name: postgres_chat
-    image: postgres:alpine
-    volumes:
-      - postgresdata:/var/lib/postgresql/data:rw
-    ports:
-      - '127.0.0.1:5432:5432'
+  db:
+    image: postgres:13-alpine
+    restart: always
     environment:
-      - POSTGRES_USER=root
-      - POSTGRES_PASSWORD=password
-      - POSTGRES_DB=app
-    networks:
-      - chat
+        POSTGRES_PASSWORD: password
+        POSTGRES_DB: db
+        POSTGRES_USER: postgres
+    volumes:
+      - db-data:/var/lib/postgresql/data:rw
+    ports:
+      - target: 5432
+        published: 5432
+        protocol: tcp
 
 networks:
   chat:
@@ -52,5 +51,5 @@ networks:
 
 volumes:
   mongodata:
-  postgresdata:
+  db-data:
 
