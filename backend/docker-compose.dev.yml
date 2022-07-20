@@ -25,12 +25,18 @@ services:
     networks:
       - chat
 
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
   postgresdb:
     hostname: postgres_chat
     container_name: postgres_chat
     image: postgres:alpine
     volumes:
-      - postgresdata:/var/lib/postgresql/data
+      - postgresdata:/var/lib/postgresql/data:rw
     ports:
       - '127.0.0.1:5432:5432'
     environment:
@@ -39,7 +45,7 @@ services:
       - POSTGRES_DB=app
     networks:
       - chat
-      
+
 networks:
   chat:
     driver: bridge
