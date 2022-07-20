@@ -1,4 +1,4 @@
-# Discord Backend
+# TchatBox Backend
 Tachatbox using React, ReactQuery, Tailwindcss, ReactContext, Socket IO, NodeJS, Express, MongoDB , Postgresql and Redis.
 
 
