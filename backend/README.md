@@ -1,5 +1,5 @@
-# TchatBox Backend
-Tachatbox using React, ReactQuery, Tailwindcss, ReactContext, Socket IO, NodeJS, Express, MongoDB , Postgresql and Redis.
+# Tchatbox Backend
+Tchatbox using React, ReactQuery, Tailwindcss, ReactContext, Socket IO, NodeJS, Express, MongoDB , Postgresql and Redis.
 
 
 <br/>
