@@ -7,18 +7,18 @@ import classNames from 'classnames'
 export default function LogoChannels({ location }) {
   const { pathname } = location
   return (
-    <div className='flex-none w-18 flex flex-col min-h-screen h-screen bg-discord-900 px-2 py-2'>
+    <div className='flex-none w-18 flex flex-col min-h-screen h-screen bg-tchatbox-900 px-2 py-2'>
       <div className='overflow-y-auto overflow-hidden'>
         <ul className='text-center'>
           <li className='mt-3'>
             <Link
               to={ME_PAGE}
               className={classNames(
-                'flex items-center mx-auto w-12 h-12 bg-discord-800  hover:bg-discord-indigo hover:text-white hover:rounded-2xlg duration-100 transition ease-linear inline-block',
+                'flex items-center mx-auto w-12 h-12 bg-tchatbox-800  hover:bg-tchatbox-indigo hover:text-white hover:rounded-2xlg duration-100 transition ease-linear inline-block',
                 {
-                  'rounded-full text-discord-100':
+                  'rounded-full text-tchatbox-100':
                     !pathname.startsWith(ME_PAGE),
-                  'bg-discord-indigo text-white rounded-2xlg':
+                  'bg-tchatbox-indigo text-white rounded-2xlg':
                     pathname.startsWith(ME_PAGE),
                 }
               )}
@@ -42,13 +42,13 @@ export default function LogoChannels({ location }) {
             <Link to={HOME_PAGE}>
               <img
                 src={newLineLogo}
-                alt='discord'
+                alt='tchatbox'
                 className='w-12 h-12 rounded-lg mx-auto'
               />
             </Link>
           </li>
           <li className='mt-3'>
-            <a href='#' className='flex items-center mx-auto w-12 h-12 bg-discord-800 text-discord-green hover:bg-green-500 hover:text-white hover:rounded-2xlg duration-100 transition ease-linear rounded-full inline-block'>
+            <a href='#' className='flex items-center mx-auto w-12 h-12 bg-tchatbox-800 text-tchatbox-green hover:bg-green-500 hover:text-white hover:rounded-2xlg duration-100 transition ease-linear rounded-full inline-block'>
               <svg
                 className='w-6 h-6 text-center mx-auto'
                 aria-hidden='false'
@@ -66,7 +66,7 @@ export default function LogoChannels({ location }) {
           <li className='mt-3'>
             <a
               href='#'
-              className='flex mx-auto items-center w-12 h-12 bg-discord-800 text-discord-green hover:bg-green-500 hover:text-white hover:rounded-2xlg duration-100 transition ease-linear rounded-full inline-block'
+              className='flex mx-auto items-center w-12 h-12 bg-tchatbox-800 text-tchatbox-green hover:bg-green-500 hover:text-white hover:rounded-2xlg duration-100 transition ease-linear rounded-full inline-block'
             >
               <svg
                 className='w-6 h-6 text-center mx-auto'
@@ -86,7 +86,7 @@ export default function LogoChannels({ location }) {
           <li className='mt-3'>
             <a
               href='#'
-              className='flex mx-auto items-center w-12 h-12 bg-discord-800 text-discord-green hover:bg-green-500 hover:text-white hover:rounded-2xlg duration-100 transition ease-linear rounded-full inline-block'
+              className='flex mx-auto items-center w-12 h-12 bg-tchatbox-800 text-tchatbox-green hover:bg-green-500 hover:text-white hover:rounded-2xlg duration-100 transition ease-linear rounded-full inline-block'
             >
               <svg
                 className='w-6 h-6 text-center mx-auto'
