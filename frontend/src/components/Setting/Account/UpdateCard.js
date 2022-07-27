@@ -14,15 +14,15 @@ export default function Card({
 }) {
   //
   return (
-    <div className='w-full md:w-1/2 flex flex-col mx-4 mx-auto bg-discord-selectMuted'>
+    <div className='w-full md:w-1/2 flex flex-col mx-4 mx-auto bg-tchatbox-selectMuted'>
       <div className='w-full  relative flex flex-col items-center justify-center p-4'>
         <h4 className='text-center text-xl font-bold text-white'>{title}</h4>
-        <p className='text-sm mt-2 text-discord-mainText'>{description}</p>
+        <p className='text-sm mt-2 text-tchatbox-mainText'>{description}</p>
         <button
           onClick={onClose}
-          className='absolute top-0 right-0 m-2 rounded-full p-2 flex items-center justify-center border-discord-popOutHeader focus:outline-none'
+          className='absolute top-0 right-0 m-2 rounded-full p-2 flex items-center justify-center border-tchatbox-popOutHeader focus:outline-none'
         >
-          <CloseIcon className='fill-current w-4 h-4 text-discord-topIcons' />
+          <CloseIcon className='fill-current w-4 h-4 text-tchatbox-topIcons' />
         </button>
       </div>
 
@@ -38,11 +38,11 @@ export default function Card({
                 <Input />
               </div>
 
-              <div className='flex bg-discord-700 justify-end p-4 items-center'>
+              <div className='flex bg-tchatbox-700 justify-end p-4 items-center'>
                 <button className='text-sm text-white mr-4' onClick={onClose}>
                   Cancel
                 </button>
-                <button className='bg-discord-experiment500 hover:bg-discord-experiment500Disabled text-sm rounded-md text-white p-2 px-6'>
+                <button className='bg-tchatbox-experiment500 hover:bg-tchatbox-experiment500Disabled text-sm rounded-md text-white p-2 px-6'>
                   {isSubmitting ? (
                     <LoadingCircle className='animate-spin h-5 w-5 text-white mx-auto' />
                   ) : (

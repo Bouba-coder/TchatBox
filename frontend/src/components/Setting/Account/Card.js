@@ -57,21 +57,21 @@ export default function Card({ user, onClose }) {
       <div className='flex justify-between mt-16'>
         <h3 className='text-white text-xl font-bold'>My Account</h3>
         <div className='flex flex-col' onClick={onClose}>
-          <button className='rounded-full p-2 flex items-center justify-center hover:bg-discord-closeButton border-2 border-discord-popOutHeader focus:outline-none'>
-            <CloseIcon className='fill-current w-4 h-4 text-discord-topIcons' />
+          <button className='rounded-full p-2 flex items-center justify-center hover:bg-tchatbox-closeButton border-2 border-tchatbox-popOutHeader focus:outline-none'>
+            <CloseIcon className='fill-current w-4 h-4 text-tchatbox-topIcons' />
           </button>
-          <h6 className='text-discord-popOutHeader text-sm text-center'>Esc</h6>
+          <h6 className='text-tchatbox-popOutHeader text-sm text-center'>Esc</h6>
         </div>
       </div>
 
       <div
-        className={`w-full bg-discord-${user?.color} h-20 relative rounded-t-lg`}
+        className={`w-full bg-tchatbox-${user?.color} h-20 relative rounded-t-lg`}
       >
         <div className='flex items-center absolute bottom-0 left-0 -mb-16 ml-4'>
           <div className='relative flex justify-center'>
             <a
               href='#'
-              className={`relative flex items-center mx-auto w-20 h-20 bg-discord-${user?.color} text-white rounded-full inline-block p-2 border-6 border-discord-900`}
+              className={`relative flex items-center mx-auto w-20 h-20 bg-tchatbox-${user?.color} text-white rounded-full inline-block p-2 border-6 border-tchatbox-900`}
             >
               <svg
                 className='w-12 h-12 text-center mx-auto'
@@ -86,36 +86,36 @@ export default function Card({ user, onClose }) {
                 ></path>
               </svg>
             </a>
-            <span className='bg-discord-green w-6 h-6 rounded-full absolute right-0 bottom-0 border-6 border-discord-900 -mr-1 mb-2'></span>
+            <span className='bg-tchatbox-green w-6 h-6 rounded-full absolute right-0 bottom-0 border-6 border-tchatbox-900 -mr-1 mb-2'></span>
           </div>
           <div className='flex items-center flex ml-4'>
             <p className='text-white text-medium font-bold'>{user?.username}</p>
-            <p className='text-discord-mainText text-medium'>
+            <p className='text-tchatbox-mainText text-medium'>
               #{user?.shortId}
             </p>
           </div>
         </div>
       </div>
-      <div className='w-full flex flex-col bg-discord-900 p-4'>
-        <button className='self-end w-24 bg-discord-experiment500 text-white p-1 rounded-md text-xs text-center hover:bg-discord-experiment500Disabled'>
+      <div className='w-full flex flex-col bg-tchatbox-900 p-4'>
+        <button className='self-end w-24 bg-tchatbox-experiment500 text-white p-1 rounded-md text-xs text-center hover:bg-tchatbox-experiment500Disabled'>
           Edit Profile
         </button>
         <div className='p-4 flex flex-col mt-8  bg-gray-700 rounded-lg'>
           <div className='flex justify-between mt-2'>
             <div className='flex flex-col'>
-              <span className='text-xxs text-discord-mainText font-semibold'>
+              <span className='text-xxs text-tchatbox-mainText font-semibold'>
                 USERNAME
               </span>
               <h6 className='text-white text-xs'>
                 {user?.username}{' '}
-                <span className='text-discord-mainText text-xs'>
+                <span className='text-tchatbox-mainText text-xs'>
                   #{user?.shortId}
                 </span>
               </h6>
             </div>
             <button
               onClick={showUserNameModal}
-              className='bg-discord-grayDeep text-white p-1 px-4 rounded text-sm text-center'
+              className='bg-tchatbox-grayDeep text-white p-1 px-4 rounded text-sm text-center'
             >
               Edit
             </button>
@@ -123,19 +123,19 @@ export default function Card({ user, onClose }) {
 
           <div className='flex justify-between mt-6'>
             <div className='flex flex-col'>
-              <span className='text-xxs text-discord-mainText font-semibold'>
+              <span className='text-xxs text-tchatbox-mainText font-semibold'>
                 EMAIL
               </span>
               <h6 className='text-white text-xs'>
                 {user?.email}{' '}
-                <span className='text-discord-mainText text-xs'>
+                <span className='text-tchatbox-mainText text-xs'>
                   #{user?.shortId}
                 </span>
               </h6>
             </div>
             <button
               onClick={showEmailModal}
-              className='bg-discord-grayDeep text-white p-1 px-4 rounded text-sm text-center'
+              className='bg-tchatbox-grayDeep text-white p-1 px-4 rounded text-sm text-center'
             >
               Edit
             </button>
@@ -143,14 +143,14 @@ export default function Card({ user, onClose }) {
 
           <div className='flex justify-between mt-6'>
             <div className='flex flex-col'>
-              <span className='text-xxs text-discord-mainText font-semibold'>
+              <span className='text-xxs text-tchatbox-mainText font-semibold'>
                 PHONE NUMBER
               </span>
               <h6 className='text-white text-xs'>
                 You haven't added a phone number yet.
               </h6>
             </div>
-            <button className='bg-discord-grayDeep text-white p-1 px-4 rounded text-sm text-center'>
+            <button className='bg-tchatbox-grayDeep text-white p-1 px-4 rounded text-sm text-center'>
               Add
             </button>
           </div>

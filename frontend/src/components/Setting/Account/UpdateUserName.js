@@ -13,8 +13,8 @@ export default function Card({ user, onClose }) {
     return (
       <TextField
         fieldClass='mb-4 mt-4'
-        labelClass='block text-discord-sideBarChannels font-semibold text-xs mb-2'
-        inputClass='w-full text-discord-100 p-2 bg-discord-deprecatedTextInput placeholder-discord-200 focus:outline-none leading-normal'
+        labelClass='block text-tchatbox-sideBarChannels font-semibold text-xs mb-2'
+        inputClass='w-full text-tchatbox-100 p-2 bg-tchatbox-deprecatedTextInput placeholder-tchatbox-200 focus:outline-none leading-normal'
         label='USERNAME'
         name='username'
         type='text'

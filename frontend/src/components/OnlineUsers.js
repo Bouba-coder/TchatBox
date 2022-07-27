@@ -2,16 +2,16 @@ import React from 'react'
 
 export default function OnlineUsers() {
   return (
-    <div className='bg-discord-700 w-64 flex-none scrollbar--show--hide sidebar--users--scrollbar p-3'>
-      <h3 className='text-discord-sideBarChannels mb-1 mt-3 font-semibold text-xs uppercase tracking-wide'>
+    <div className='bg-tchatbox-700 w-64 flex-none scrollbar--show--hide sidebar--users--scrollbar p-3'>
+      <h3 className='text-tchatbox-sideBarChannels mb-1 mt-3 font-semibold text-xs uppercase tracking-wide'>
         online—3
       </h3>
       <ul>
-        <li className='text-discord-sideBarChannels hover:text-discord-100 flex hover:bg-discord-selectMuted p-1 rounded-md cursor-pointer'>
+        <li className='text-tchatbox-sideBarChannels hover:text-tchatbox-100 flex hover:bg-tchatbox-selectMuted p-1 rounded-md cursor-pointer'>
           <div className='flex justify-center'>
             <a
               href='#'
-              className='flex items-center w-10 h-10 bg-discord-red text-white rounded-full inline-block'
+              className='flex items-center w-10 h-10 bg-tchatbox-red text-white rounded-full inline-block'
             >
               <svg
                 className='w-6 h-6 text-center mx-auto'
@@ -28,8 +28,8 @@ export default function OnlineUsers() {
             </a>
           </div>
           <div className='flex ml-2 items-center  justify-center'>
-            <span className='text-discord-sideBarChannels text-sm'>Milad</span>
-            <span className='ml-1 text-discord-yellow'>
+            <span className='text-tchatbox-sideBarChannels text-sm'>Milad</span>
+            <span className='ml-1 text-tchatbox-yellow'>
               <svg
                 className='w-4 h-4'
                 aria-label='Server Owner'
@@ -50,11 +50,11 @@ export default function OnlineUsers() {
             </span>
           </div>
         </li>
-        <li className='text-discord-sideBarChannels hover:text-discord-100 flex hover:bg-discord-selectMuted p-1 rounded-md cursor-pointer'>
+        <li className='text-tchatbox-sideBarChannels hover:text-tchatbox-100 flex hover:bg-tchatbox-selectMuted p-1 rounded-md cursor-pointer'>
           <div className='flex justify-center'>
             <a
               href='#'
-              className='flex items-center w-10 h-10 bg-discord-green text-white rounded-full inline-block'
+              className='flex items-center w-10 h-10 bg-tchatbox-green text-white rounded-full inline-block'
             >
               <svg
                 className='w-6 h-6 text-center mx-auto'
@@ -71,14 +71,14 @@ export default function OnlineUsers() {
             </a>
           </div>
           <div className='flex ml-2 items-center  justify-center'>
-            <span className='text-discord-sideBarChannels text-sm'>Batman</span>
+            <span className='text-tchatbox-sideBarChannels text-sm'>Batman</span>
           </div>
         </li>
-        <li className='text-discord-sideBarChannels hover:text-discord-100 flex hover:bg-discord-selectMuted p-1 rounded-md cursor-pointer'>
+        <li className='text-tchatbox-sideBarChannels hover:text-tchatbox-100 flex hover:bg-tchatbox-selectMuted p-1 rounded-md cursor-pointer'>
           <div className='flex justify-center'>
             <a
               href='#'
-              className='flex items-center w-10 h-10 bg-discord-yellow text-white rounded-full inline-block'
+              className='flex items-center w-10 h-10 bg-tchatbox-yellow text-white rounded-full inline-block'
             >
               <svg
                 className='w-6 h-6 text-center mx-auto'
@@ -95,16 +95,16 @@ export default function OnlineUsers() {
             </a>
           </div>
           <div className='flex ml-2 items-center  justify-center'>
-            <span className='text-discord-sideBarChannels text-sm'>
+            <span className='text-tchatbox-sideBarChannels text-sm'>
               [x]joker[x]
             </span>
           </div>
         </li>
-        <li className='text-discord-sideBarChannels hover:text-discord-100 flex hover:bg-discord-selectMuted p-1 rounded-md cursor-pointer'>
+        <li className='text-tchatbox-sideBarChannels hover:text-tchatbox-100 flex hover:bg-tchatbox-selectMuted p-1 rounded-md cursor-pointer'>
           <div className='flex justify-center'>
             <a
               href='#'
-              className='flex items-center w-10 h-10 bg-discord-yellow text-white rounded-full inline-block'
+              className='flex items-center w-10 h-10 bg-tchatbox-yellow text-white rounded-full inline-block'
             >
               <svg
                 className='w-6 h-6 text-center mx-auto'
@@ -121,16 +121,16 @@ export default function OnlineUsers() {
             </a>
           </div>
           <div className='flex ml-2 items-center  justify-center'>
-            <span className='text-discord-sideBarChannels text-sm'>
+            <span className='text-tchatbox-sideBarChannels text-sm'>
               [x]joker[x]
             </span>
           </div>
         </li>
-        <li className='text-discord-sideBarChannels hover:text-discord-100 flex hover:bg-discord-selectMuted p-1 rounded-md cursor-pointer'>
+        <li className='text-tchatbox-sideBarChannels hover:text-tchatbox-100 flex hover:bg-tchatbox-selectMuted p-1 rounded-md cursor-pointer'>
           <div className='flex justify-center'>
             <a
               href='#'
-              className='flex items-center w-10 h-10 bg-discord-yellow text-white rounded-full inline-block'
+              className='flex items-center w-10 h-10 bg-tchatbox-yellow text-white rounded-full inline-block'
             >
               <svg
                 className='w-6 h-6 text-center mx-auto'
@@ -147,16 +147,16 @@ export default function OnlineUsers() {
             </a>
           </div>
           <div className='flex ml-2 items-center  justify-center'>
-            <span className='text-discord-sideBarChannels text-sm'>
+            <span className='text-tchatbox-sideBarChannels text-sm'>
               [x]joker[x]
             </span>
           </div>
         </li>
-        <li className='text-discord-sideBarChannels hover:text-discord-100 flex hover:bg-discord-selectMuted p-1 rounded-md cursor-pointer'>
+        <li className='text-tchatbox-sideBarChannels hover:text-tchatbox-100 flex hover:bg-tchatbox-selectMuted p-1 rounded-md cursor-pointer'>
           <div className='flex justify-center'>
             <a
               href='#'
-              className='flex items-center w-10 h-10 bg-discord-yellow text-white rounded-full inline-block'
+              className='flex items-center w-10 h-10 bg-tchatbox-yellow text-white rounded-full inline-block'
             >
               <svg
                 className='w-6 h-6 text-center mx-auto'
@@ -173,16 +173,16 @@ export default function OnlineUsers() {
             </a>
           </div>
           <div className='flex ml-2 items-center  justify-center'>
-            <span className='text-discord-sideBarChannels text-sm'>
+            <span className='text-tchatbox-sideBarChannels text-sm'>
               [x]joker[x]
             </span>
           </div>
         </li>
-        <li className='text-discord-sideBarChannels hover:text-discord-100 flex hover:bg-discord-selectMuted p-1 rounded-md cursor-pointer'>
+        <li className='text-tchatbox-sideBarChannels hover:text-tchatbox-100 flex hover:bg-tchatbox-selectMuted p-1 rounded-md cursor-pointer'>
           <div className='flex justify-center'>
             <a
               href='#'
-              className='flex items-center w-10 h-10 bg-discord-yellow text-white rounded-full inline-block'
+              className='flex items-center w-10 h-10 bg-tchatbox-yellow text-white rounded-full inline-block'
             >
               <svg
                 className='w-6 h-6 text-center mx-auto'
@@ -199,16 +199,16 @@ export default function OnlineUsers() {
             </a>
           </div>
           <div className='flex ml-2 items-center  justify-center'>
-            <span className='text-discord-sideBarChannels text-sm'>
+            <span className='text-tchatbox-sideBarChannels text-sm'>
               [x]joker[x]
             </span>
           </div>
         </li>
-        <li className='text-discord-sideBarChannels hover:text-discord-100 flex hover:bg-discord-selectMuted p-1 rounded-md cursor-pointer'>
+        <li className='text-tchatbox-sideBarChannels hover:text-tchatbox-100 flex hover:bg-tchatbox-selectMuted p-1 rounded-md cursor-pointer'>
           <div className='flex justify-center'>
             <a
               href='#'
-              className='flex items-center w-10 h-10 bg-discord-yellow text-white rounded-full inline-block'
+              className='flex items-center w-10 h-10 bg-tchatbox-yellow text-white rounded-full inline-block'
             >
               <svg
                 className='w-6 h-6 text-center mx-auto'
@@ -225,16 +225,16 @@ export default function OnlineUsers() {
             </a>
           </div>
           <div className='flex ml-2 items-center  justify-center'>
-            <span className='text-discord-sideBarChannels text-sm'>
+            <span className='text-tchatbox-sideBarChannels text-sm'>
               [x]joker[x]
             </span>
           </div>
         </li>
-        <li className='text-discord-sideBarChannels hover:text-discord-100 flex hover:bg-discord-selectMuted p-1 rounded-md cursor-pointer'>
+        <li className='text-tchatbox-sideBarChannels hover:text-tchatbox-100 flex hover:bg-tchatbox-selectMuted p-1 rounded-md cursor-pointer'>
           <div className='flex justify-center'>
             <a
               href='#'
-              className='flex items-center w-10 h-10 bg-discord-yellow text-white rounded-full inline-block'
+              className='flex items-center w-10 h-10 bg-tchatbox-yellow text-white rounded-full inline-block'
             >
               <svg
                 className='w-6 h-6 text-center mx-auto'
@@ -251,16 +251,16 @@ export default function OnlineUsers() {
             </a>
           </div>
           <div className='flex ml-2 items-center  justify-center'>
-            <span className='text-discord-sideBarChannels text-sm'>
+            <span className='text-tchatbox-sideBarChannels text-sm'>
               [x]joker[x]
             </span>
           </div>
         </li>
-        <li className='text-discord-sideBarChannels hover:text-discord-100 flex hover:bg-discord-selectMuted p-1 rounded-md cursor-pointer'>
+        <li className='text-tchatbox-sideBarChannels hover:text-tchatbox-100 flex hover:bg-tchatbox-selectMuted p-1 rounded-md cursor-pointer'>
           <div className='flex justify-center'>
             <a
               href='#'
-              className='flex items-center w-10 h-10 bg-discord-yellow text-white rounded-full inline-block'
+              className='flex items-center w-10 h-10 bg-tchatbox-yellow text-white rounded-full inline-block'
             >
               <svg
                 className='w-6 h-6 text-center mx-auto'
@@ -277,16 +277,16 @@ export default function OnlineUsers() {
             </a>
           </div>
           <div className='flex ml-2 items-center  justify-center'>
-            <span className='text-discord-sideBarChannels text-sm'>
+            <span className='text-tchatbox-sideBarChannels text-sm'>
               [x]joker[x]
             </span>
           </div>
         </li>
-        <li className='text-discord-sideBarChannels hover:text-discord-100 flex hover:bg-discord-selectMuted p-1 rounded-md cursor-pointer'>
+        <li className='text-tchatbox-sideBarChannels hover:text-tchatbox-100 flex hover:bg-tchatbox-selectMuted p-1 rounded-md cursor-pointer'>
           <div className='flex justify-center'>
             <a
               href='#'
-              className='flex items-center w-10 h-10 bg-discord-yellow text-white rounded-full inline-block'
+              className='flex items-center w-10 h-10 bg-tchatbox-yellow text-white rounded-full inline-block'
             >
               <svg
                 className='w-6 h-6 text-center mx-auto'
@@ -303,16 +303,16 @@ export default function OnlineUsers() {
             </a>
           </div>
           <div className='flex ml-2 items-center  justify-center'>
-            <span className='text-discord-sideBarChannels text-sm'>
+            <span className='text-tchatbox-sideBarChannels text-sm'>
               [x]joker[x]
             </span>
           </div>
         </li>
-        <li className='text-discord-sideBarChannels hover:text-discord-100 flex hover:bg-discord-selectMuted p-1 rounded-md cursor-pointer'>
+        <li className='text-tchatbox-sideBarChannels hover:text-tchatbox-100 flex hover:bg-tchatbox-selectMuted p-1 rounded-md cursor-pointer'>
           <div className='flex justify-center'>
             <a
               href='#'
-              className='flex items-center w-10 h-10 bg-discord-yellow text-white rounded-full inline-block'
+              className='flex items-center w-10 h-10 bg-tchatbox-yellow text-white rounded-full inline-block'
             >
               <svg
                 className='w-6 h-6 text-center mx-auto'
@@ -329,16 +329,16 @@ export default function OnlineUsers() {
             </a>
           </div>
           <div className='flex ml-2 items-center  justify-center'>
-            <span className='text-discord-sideBarChannels text-sm'>
+            <span className='text-tchatbox-sideBarChannels text-sm'>
               [x]joker[x]
             </span>
           </div>
         </li>
-        <li className='text-discord-sideBarChannels hover:text-discord-100 flex hover:bg-discord-selectMuted p-1 rounded-md cursor-pointer'>
+        <li className='text-tchatbox-sideBarChannels hover:text-tchatbox-100 flex hover:bg-tchatbox-selectMuted p-1 rounded-md cursor-pointer'>
           <div className='flex justify-center'>
             <a
               href='#'
-              className='flex items-center w-10 h-10 bg-discord-yellow text-white rounded-full inline-block'
+              className='flex items-center w-10 h-10 bg-tchatbox-yellow text-white rounded-full inline-block'
             >
               <svg
                 className='w-6 h-6 text-center mx-auto'
@@ -355,16 +355,16 @@ export default function OnlineUsers() {
             </a>
           </div>
           <div className='flex ml-2 items-center  justify-center'>
-            <span className='text-discord-sideBarChannels text-sm'>
+            <span className='text-tchatbox-sideBarChannels text-sm'>
               [x]joker[x]
             </span>
           </div>
         </li>
-        <li className='text-discord-sideBarChannels hover:text-discord-100 flex hover:bg-discord-selectMuted p-1 rounded-md cursor-pointer'>
+        <li className='text-tchatbox-sideBarChannels hover:text-tchatbox-100 flex hover:bg-tchatbox-selectMuted p-1 rounded-md cursor-pointer'>
           <div className='flex justify-center'>
             <a
               href='#'
-              className='flex items-center w-10 h-10 bg-discord-yellow text-white rounded-full inline-block'
+              className='flex items-center w-10 h-10 bg-tchatbox-yellow text-white rounded-full inline-block'
             >
               <svg
                 className='w-6 h-6 text-center mx-auto'
@@ -381,16 +381,16 @@ export default function OnlineUsers() {
             </a>
           </div>
           <div className='flex ml-2 items-center  justify-center'>
-            <span className='text-discord-sideBarChannels text-sm'>
+            <span className='text-tchatbox-sideBarChannels text-sm'>
               [x]joker[x]
             </span>
           </div>
         </li>
-        <li className='text-discord-sideBarChannels hover:text-discord-100 flex hover:bg-discord-selectMuted p-1 rounded-md cursor-pointer'>
+        <li className='text-tchatbox-sideBarChannels hover:text-tchatbox-100 flex hover:bg-tchatbox-selectMuted p-1 rounded-md cursor-pointer'>
           <div className='flex justify-center'>
             <a
               href='#'
-              className='flex items-center w-10 h-10 bg-discord-yellow text-white rounded-full inline-block'
+              className='flex items-center w-10 h-10 bg-tchatbox-yellow text-white rounded-full inline-block'
             >
               <svg
                 className='w-6 h-6 text-center mx-auto'
@@ -407,16 +407,16 @@ export default function OnlineUsers() {
             </a>
           </div>
           <div className='flex ml-2 items-center  justify-center'>
-            <span className='text-discord-sideBarChannels text-sm'>
+            <span className='text-tchatbox-sideBarChannels text-sm'>
               [x]joker[x]
             </span>
           </div>
         </li>
-        <li className='text-discord-sideBarChannels hover:text-discord-100 flex hover:bg-discord-selectMuted p-1 rounded-md cursor-pointer'>
+        <li className='text-tchatbox-sideBarChannels hover:text-tchatbox-100 flex hover:bg-tchatbox-selectMuted p-1 rounded-md cursor-pointer'>
           <div className='flex justify-center'>
             <a
               href='#'
-              className='flex items-center w-10 h-10 bg-discord-yellow text-white rounded-full inline-block'
+              className='flex items-center w-10 h-10 bg-tchatbox-yellow text-white rounded-full inline-block'
             >
               <svg
                 className='w-6 h-6 text-center mx-auto'
@@ -433,16 +433,16 @@ export default function OnlineUsers() {
             </a>
           </div>
           <div className='flex ml-2 items-center  justify-center'>
-            <span className='text-discord-sideBarChannels text-sm'>
+            <span className='text-tchatbox-sideBarChannels text-sm'>
               [x]joker[x]
             </span>
           </div>
         </li>
-        <li className='text-discord-sideBarChannels hover:text-discord-100 flex hover:bg-discord-selectMuted p-1 rounded-md cursor-pointer'>
+        <li className='text-tchatbox-sideBarChannels hover:text-tchatbox-100 flex hover:bg-tchatbox-selectMuted p-1 rounded-md cursor-pointer'>
           <div className='flex justify-center'>
             <a
               href='#'
-              className='flex items-center w-10 h-10 bg-discord-yellow text-white rounded-full inline-block'
+              className='flex items-center w-10 h-10 bg-tchatbox-yellow text-white rounded-full inline-block'
             >
               <svg
                 className='w-6 h-6 text-center mx-auto'
@@ -459,16 +459,16 @@ export default function OnlineUsers() {
             </a>
           </div>
           <div className='flex ml-2 items-center  justify-center'>
-            <span className='text-discord-sideBarChannels text-sm'>
+            <span className='text-tchatbox-sideBarChannels text-sm'>
               [x]joker[x]
             </span>
           </div>
         </li>
-        <li className='text-discord-sideBarChannels hover:text-discord-100 flex hover:bg-discord-selectMuted p-1 rounded-md cursor-pointer'>
+        <li className='text-tchatbox-sideBarChannels hover:text-tchatbox-100 flex hover:bg-tchatbox-selectMuted p-1 rounded-md cursor-pointer'>
           <div className='flex justify-center'>
             <a
               href='#'
-              className='flex items-center w-10 h-10 bg-discord-yellow text-white rounded-full inline-block'
+              className='flex items-center w-10 h-10 bg-tchatbox-yellow text-white rounded-full inline-block'
             >
               <svg
                 className='w-6 h-6 text-center mx-auto'
@@ -485,16 +485,16 @@ export default function OnlineUsers() {
             </a>
           </div>
           <div className='flex ml-2 items-center  justify-center'>
-            <span className='text-discord-sideBarChannels text-sm'>
+            <span className='text-tchatbox-sideBarChannels text-sm'>
               [x]joker[x]
             </span>
           </div>
         </li>
-        <li className='text-discord-sideBarChannels hover:text-discord-100 flex hover:bg-discord-selectMuted p-1 rounded-md cursor-pointer'>
+        <li className='text-tchatbox-sideBarChannels hover:text-tchatbox-100 flex hover:bg-tchatbox-selectMuted p-1 rounded-md cursor-pointer'>
           <div className='flex justify-center'>
             <a
               href='#'
-              className='flex items-center w-10 h-10 bg-discord-yellow text-white rounded-full inline-block'
+              className='flex items-center w-10 h-10 bg-tchatbox-yellow text-white rounded-full inline-block'
             >
               <svg
                 className='w-6 h-6 text-center mx-auto'
@@ -511,7 +511,7 @@ export default function OnlineUsers() {
             </a>
           </div>
           <div className='flex ml-2 items-center  justify-center'>
-            <span className='text-discord-sideBarChannels text-sm'>
+            <span className='text-tchatbox-sideBarChannels text-sm'>
               [x]joker[x]
             </span>
           </div>

@@ -40,7 +40,7 @@ export default function Message({
 
     return (
       <>
-        <span className='text-discord-popOutHeader text-xxs'> (edited)</span>
+        <span className='text-tchatbox-popOutHeader text-xxs'> (edited)</span>
       </>
     )
   }
@@ -51,22 +51,22 @@ export default function Message({
       icon: <PenIcon className='w-4 h-4' />,
       cb: editModalToggle,
       style:
-        'flex justify-between items-center text-sm px-4 py-1 mb-1 text-discord-mainText hover:bg-discord-experiment500Disabled rounded hover:text-white',
+        'flex justify-between items-center text-sm px-4 py-1 mb-1 text-tchatbox-mainText hover:bg-tchatbox-experiment500Disabled rounded hover:text-white',
     },
     {
       text: 'Delete Message',
       icon: <DeleteIcon className='w-4 h-4' />,
       cb: showDeleteModal,
       style:
-        'flex justify-between items-center text-sm px-4 py-1 text-discord-red2 hover:bg-discord-red2 rounded hover:text-white',
+        'flex justify-between items-center text-sm px-4 py-1 text-tchatbox-red2 hover:bg-tchatbox-red2 rounded hover:text-white',
     },
   ]
   return (
     <div
       className={classNames(
-        'w-full flex hover:bg-discord-transparentBlack3 justify-between relative',
+        'w-full flex hover:bg-tchatbox-transparentBlack3 justify-between relative',
         {
-          'bg-discord-transparentBlack3': currentMsgEditId === id,
+          'bg-tchatbox-transparentBlack3': currentMsgEditId === id,
         }
       )}
       onMouseEnter={() => setShowSetting(true)}
@@ -77,7 +77,7 @@ export default function Message({
           <div className='flex w-full'>
             <p
               className={classNames(
-                'w-12 flex flex-shrink-0 justify-center mt-1 text-discord-sideBarChannels text-xxxs',
+                'w-12 flex flex-shrink-0 justify-center mt-1 text-tchatbox-sideBarChannels text-xxxs',
                 {
                   invisible: !showSetting,
                 }
@@ -88,7 +88,7 @@ export default function Message({
             {currentMsgEditId === id ? (
               <EditMessage chat={chat} onClose={setEditMessage} />
             ) : (
-              <p className='text-discord-100 break-all text-sm font-light ml-2 text-left'>
+              <p className='text-tchatbox-100 break-all text-sm font-light ml-2 text-left'>
                 {message}
                 {ShowEditedLabel(chat)}
               </p>
@@ -105,7 +105,7 @@ export default function Message({
           <div className='flex justify-center'>
             <a
               href='#'
-              className={`flex items-center mx-auto w-10 h-10 bg-discord-${chat?.senderId?.color} text-white rounded-full inline-block`}
+              className={`flex items-center mx-auto w-10 h-10 bg-tchatbox-${chat?.senderId?.color} text-white rounded-full inline-block`}
             >
               <svg
                 className='w-6 h-6 text-center mx-auto'
@@ -126,7 +126,7 @@ export default function Message({
               <a href='#' className='text-white hover:underline text-sm'>
                 {senderId.username}
               </a>
-              <span className='text-discord-sideBarChannels ml-2 text-xxs'>
+              <span className='text-tchatbox-sideBarChannels ml-2 text-xxs'>
                 {chatMainTime(chat.createdAt)}
               </span>
             </div>
@@ -134,7 +134,7 @@ export default function Message({
               <EditMessage chat={chat} onClose={setEditMessage} />
             ) : (
               <div className='flex  w-full '>
-                <p className='break-all text-discord-100 text-sm font-light text-left'>
+                <p className='break-all text-tchatbox-100 text-sm font-light text-left'>
                   {message}
                   {ShowEditedLabel(chat)}
                 </p>
@@ -145,23 +145,23 @@ export default function Message({
       )}
 
       {showSetting && (
-        <ul className='flex bg-discord-600 absolute -top-3 right-5 hover:shadow-lg rounded-md'>
-          <li className='mr-2 p-1 cursor-pointer hover:bg-discord-itemHover'>
-            <AddEmojiIcon className='w-5 h-5 text-discord-500' />
+        <ul className='flex bg-tchatbox-600 absolute -top-3 right-5 hover:shadow-lg rounded-md'>
+          <li className='mr-2 p-1 cursor-pointer hover:bg-tchatbox-itemHover'>
+            <AddEmojiIcon className='w-5 h-5 text-tchatbox-500' />
           </li>
           {isAuthor && (
             <li
-              className='mr-2 p-1 cursor-pointer hover:bg-discord-itemHover'
+              className='mr-2 p-1 cursor-pointer hover:bg-tchatbox-itemHover'
               onClick={editModalToggle}
             >
-              <PenIcon className='w-5 h-5 text-discord-500' />
+              <PenIcon className='w-5 h-5 text-tchatbox-500' />
             </li>
           )}
           {isAuthor && (
-            <li className='mr-2 p-1 cursor-pointer hover:bg-discord-itemHover'>
+            <li className='mr-2 p-1 cursor-pointer hover:bg-tchatbox-itemHover'>
               <DropDown
                 ButtonComponent={HorizontalThreeDots}
-                buttonClasses='w-5 h-5 text-discord-500'
+                buttonClasses='w-5 h-5 text-tchatbox-500'
                 items={dropDownItems}
               />
             </li>

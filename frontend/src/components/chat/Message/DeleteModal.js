@@ -52,12 +52,12 @@ export default function DeleteModal({ chat, onClose }) {
   }
 
   return (
-    <div className='w-full md:w-1/2 flex flex-col mx-4 mx-auto bg-discord-selectMuted'>
+    <div className='w-full md:w-1/2 flex flex-col mx-4 mx-auto bg-tchatbox-selectMuted'>
       <div className='w-full  relative flex flex-col items-center justify-center p-4'>
         <h4 className='w-full text-xl font-bold text-white text-left'>
           Delete Message
         </h4>
-        <p className='w-full text-sm mt-2 text-discord-mainText text-left'>
+        <p className='w-full text-sm mt-2 text-tchatbox-mainText text-left'>
           Are you sure you want to delete this message?
         </p>
       </div>
@@ -67,7 +67,7 @@ export default function DeleteModal({ chat, onClose }) {
           <div className='flex justify-center'>
             <a
               href='#'
-              className={`flex items-center mx-auto w-10 h-10 bg-discord-${chat?.senderId?.color} text-white rounded-full inline-block`}
+              className={`flex items-center mx-auto w-10 h-10 bg-tchatbox-${chat?.senderId?.color} text-white rounded-full inline-block`}
             >
               <svg
                 className='w-6 h-6 text-center mx-auto'
@@ -88,19 +88,19 @@ export default function DeleteModal({ chat, onClose }) {
               <a href='#' className='text-white hover:underline text-sm'>
                 {senderId.username}
               </a>
-              <span className='text-discord-sideBarChannels ml-2 text-xxs'>
+              <span className='text-tchatbox-sideBarChannels ml-2 text-xxs'>
                 {chatMainTime(chat.createdAt)}
               </span>
             </div>
             <div className='overflow-y-auto'>
-              <p className='break-all text-discord-100 text-sm font-light text-left'>
+              <p className='break-all text-tchatbox-100 text-sm font-light text-left'>
                 {message}
               </p>
             </div>
           </div>
         </div>
 
-        <div className='flex bg-discord-700 justify-end p-4 items-center'>
+        <div className='flex bg-tchatbox-700 justify-end p-4 items-center'>
           <button
             className='focus:outline-none text-sm text-white mr-4 hover:underline'
             onClick={onClose}
@@ -109,7 +109,7 @@ export default function DeleteModal({ chat, onClose }) {
           </button>
           <button
             onClick={handleDelete}
-            className='bg-discord-red2 focus:outline-none hover:bg-discord-red2Hover text-sm rounded-md text-white p-2 px-6'
+            className='bg-tchatbox-red2 focus:outline-none hover:bg-tchatbox-red2Hover text-sm rounded-md text-white p-2 px-6'
           >
             {loading ? (
               <LoadingCircle className='animate-spin h-5 w-5 text-white mx-auto' />

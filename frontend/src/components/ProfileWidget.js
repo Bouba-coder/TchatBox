@@ -12,12 +12,12 @@ export default function ProfileWidget({ user }) {
   }
 
   return (
-    <div className='bg-discord-secondPrimary py-2 px-1 flex items-center justify-between w-full '>
+    <div className='bg-tchatbox-secondPrimary py-2 px-1 flex items-center justify-between w-full '>
       <div className='flex items-center'>
         <div className='relative flex justify-center'>
           <a
             href='#'
-            className={`relative flex items-center mx-auto w-10 h-10 bg-discord-${me?.user?.color} text-white hover:text-discord-100 rounded-full inline-block`}
+            className={`relative flex items-center mx-auto w-10 h-10 bg-tchatbox-${me?.user?.color} text-white hover:text-tchatbox-100 rounded-full inline-block`}
           >
             <svg
               className='w-6 h-6 text-center mx-auto'
@@ -33,20 +33,20 @@ export default function ProfileWidget({ user }) {
             </svg>
           </a>
           <span
-            className='bg-discord-green w-3 h-3 rounded-full absolute right-0 bottom-0'
+            className='bg-tchatbox-green w-3 h-3 rounded-full absolute right-0 bottom-0'
             style={{ right: '-3px', bottom: '4px' }}
           ></span>
         </div>
         <div className='flex items-center flex-col ml-2'>
           <p className='text-white text-xs font-bold'>{user?.username}</p>
-          <p className='text-discord-mainText text-xxs'>#{user?.shortId}</p>
+          <p className='text-tchatbox-mainText text-xxs'>#{user?.shortId}</p>
         </div>
       </div>
       <div className='flex items-center mr-2'>
         <div>
           <a
             href='#'
-            className='flex items-center p-2 mx-auto text-discord-topIcons hover:bg-discord-selectMuted hover:text-discord-mainTextHover rounded-lg inline-block'
+            className='flex items-center p-2 mx-auto text-tchatbox-topIcons hover:bg-tchatbox-selectMuted hover:text-tchatbox-mainTextHover rounded-lg inline-block'
             onClick={showSettingModal}
           >
             <svg aria-hidden='false' width='24' height='24' viewBox='0 0 24 24'>

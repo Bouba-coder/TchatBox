@@ -10,7 +10,7 @@ export default function DropDown({ ButtonComponent, buttonClasses, items }) {
         onClick={() => setOpen(!open)}
       />
       {open && (
-        <div className='w-48 px-2 py-2 bg-discord-floating top-0 right-7 rounded-mdx shadow-lg absolute'>
+        <div className='w-48 px-2 py-2 bg-tchatbox-floating top-0 right-7 rounded-mdx shadow-lg absolute'>
           {items.map((item, i) => {
             return (
               <a

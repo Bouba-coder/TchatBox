@@ -65,7 +65,7 @@ export default function MessageContainer({ room, user }) {
   }
 
   return (
-    <div className='bg-discord-600 flex flex-1 flex-col'>
+    <div className='bg-tchatbox-600 flex flex-1 flex-col'>
       <div className='overflow-y-auto h-full main--chat--scrollbar flex-1 flex flex-col-reverse'>
         {isLoading === false && messages.length ? (
           messages.map((message, index) => {

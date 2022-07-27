@@ -7,7 +7,7 @@ import { OPEN_ROOMS } from '../../../constants/queryKeys'
 import { DM_URL, ME_PAGE } from '../../../constants/history.constants'
 import { getOrCreateRoom, closeDMApi } from '../../../api/room'
 import apiErrorHandler from '../../../utils/apiErrorHandler'
-import TchatBox from '../../../assets/tchatbox_logo.svg' 
+import TchatBox from '../../../assets/tchatbox_logo.svg'
 import LoadingCircle from '../../../assets/loading_circle_icon.svg'
 import CloseIcon from '../../../assets/close_icon.svg'
 

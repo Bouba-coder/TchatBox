@@ -7,7 +7,7 @@ import { login } from '../../api/auth'
 import { ME_PAGE } from '../../constants/history.constants'
 import apiErrorHandler from '../../utils/apiErrorHandler'
 import LoadingCircle from '../../assets/loading_circle_icon.svg'
-import TchatBox from '../../assets/tchatbox_logo.svg' 
+import TchatBox from '../../assets/tchatbox_logo.svg'
 import { useAppState } from '../../context/app-state-context'
 
 export default function Index() {
@@ -32,8 +32,6 @@ export default function Index() {
       }
     }
   }
-  
-
 
   return (
     <div className='flex flex-col   relative bg-tchatbox-semi600 h-screen w-full'>
@@ -41,7 +39,7 @@ export default function Index() {
         to='/'
         className='z-10 text-white mt-16 sm:self-start mx-auto sm:ml-8 sm:mt-8'
       >
-       <TchatBox className='w-24 h-24 text-center mx-auto' />
+        <TchatBox className='w-24 h-24 text-center mx-auto' />
       </Link>
 
       <div className='z-10 bg-tchatbox-semi600 w-full sm:w-4/6 md:w-4/6 lg:w-4/6 xl:w-2/5 rounded-md p-5 m-12 flex flex-row mx-auto mt-16'>

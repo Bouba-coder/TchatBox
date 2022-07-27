@@ -10,8 +10,8 @@ module.exports = {
           yellow: '#faa61a',
           chatInputBg: '#40697A',
           secondPrimary: '#292b2f',
-          mainTextHover: '#dcddde',
-          mainText: '#b9bbbe',
+          mainTextHover: '#555555',
+          mainText: '#000000',
           red: '#f04747',
           red2: '#ed4245',
           red2Hover: '#AE3260',
@@ -27,7 +27,7 @@ module.exports = {
           experiment500Hover: '#7983f5',
           deprecatedTextInputBorder: '#0000004d',
           deprecatedTextInput: '#0000001a',
-          semi600: '#65686F',
+          semi600: '#ffffff',
           popOutHeader: '#3E4756',
           textLink: '#00aff4',
           lightGreen: '#3ba55d',
@@ -51,7 +51,8 @@ module.exports = {
           600: '#4F505C',
           700: '#4B4B55',
           800: '#36393f',
-          900: '#202225',        },
+          900: '#202225',
+        },
       },
       fontSize: {
         xxxs: '0.60rem',
@@ -270,12 +271,9 @@ module.exports = {
       sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
       default:
         '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
-      md:
-        '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
-      lg:
-        '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
-      xl:
-        '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+      md: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+      lg: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+      xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
       '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
       inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
       outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
