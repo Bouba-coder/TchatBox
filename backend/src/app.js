@@ -7,7 +7,7 @@ const cors = require('cors');
 const passport = require('passport');
 const httpStatus = require('http-status');
 const { jwtStrategy } = require('./config/passport');
-const routes = require('./routes');
+const routes = require('./routes/v1');
 const { errorConverter, errorHandler } = require('./middlewares/error');
 const ApiError = require('./utils/ApiError');
 const app = express();
@@ -50,7 +50,7 @@ app.use(passport.initialize());
 passport.use('jwt', jwtStrategy);
 
 // api routes
-app.use('/api', routes);
+app.use('/api/v1', routes);
 
 // send back a 404 error for any unknown api request
 app.use((req, res, next) => {
