@@ -20,26 +20,21 @@ export default function MessageContainer({ room, user }) {
   const observer = useRef()
   const [currentMsgEditId, setCurrentMsgEditId] = useState(null)
 
-  const {
-    data,
-    isLoading,
-    fetchNextPage,
-    hasNextPage,
-    isFetchingNextPage,
-  } = useInfiniteQuery(
-    ROOM_MESSAGES_KEY(room?.id),
-    async ({ pageParam }) => {
-      const { data } = await getMessages(room.id, pageParam)
+  const { data, isLoading, fetchNextPage, hasNextPage, isFetchingNextPage } =
+    useInfiniteQuery(
+      ROOM_MESSAGES_KEY(room?.id),
+      async ({ pageParam }) => {
+        const { data } = await getMessages(room.id, pageParam)
 
-      return data
-    },
-    {
-      getNextPageParam: (lastPage) => {
-        const { page, totalPages } = lastPage
-        return page < totalPages ? page + 1 : undefined
+        return data
       },
-    }
-  )
+      {
+        getNextPageParam: (lastPage) => {
+          const { page, totalPages } = lastPage
+          return page < totalPages ? page + 1 : undefined
+        },
+      }
+    )
 
   const lastMessageRef = useCallback(
     (node) => {

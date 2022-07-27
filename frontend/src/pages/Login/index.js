@@ -34,7 +34,7 @@ export default function Index() {
   }
 
   return (
-    <div className='flex flex-col   relative bg-tchatbox-semi600 h-screen w-full'>
+    <div className='flex flex-col  relative bg-teal-500 h-screen w-full'>
       <Link
         to='/'
         className='z-10 text-white mt-16 sm:self-start mx-auto sm:ml-8 sm:mt-8'
