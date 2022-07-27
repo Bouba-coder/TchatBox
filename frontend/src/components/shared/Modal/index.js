@@ -33,7 +33,7 @@ export default function Modal({ show, onClose, children, center, big }) {
   }
 
   const bodyClass = classNames(
-    `fixed h-full w-full top-0 left-0 z-50 bg-tchatbox-900 bg-opacity-50 ${centerPosition}`,
+    `fixed h-full w-full top-0 left-0 z-50 bg-discord-900 bg-opacity-50 ${centerPosition}`,
     {
       'opacity-0': !show,
       // 'animate-modalOut': !show,

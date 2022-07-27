@@ -3,7 +3,7 @@ import React from 'react'
 export default function Header() {
   return (
     <div className='flex text-white h-12'>
-      <div className='w-56 bg-tchatbox-700 flex-none flex items-center justify-between py-2 border-b border-tchatbox-900 px-4'>
+      <div className='w-56 bg-discord-700 flex-none flex items-center justify-between py-2 border-b border-discord-900 px-4'>
         <div className='text-sm text-white font-bold'>newLine</div>
         <button>
           <svg width='18' height='18'>
@@ -23,9 +23,9 @@ export default function Header() {
           </svg>
         </button>
       </div>
-      <div className='flex-1 flex items-center justify-between bg-tchatbox-600 border-b border-tchatbox-900 px-4'>
+      <div className='flex-1 flex items-center justify-between bg-discord-600 border-b border-discord-900 px-4'>
         <div className='flex items-center'>
-          <div className='text-tchatbox-200 text-2xl'>
+          <div className='text-discord-200 text-2xl'>
             <svg width='24' height='24' viewBox='0 0 24 24' className='w-6 h-6'>
               <path
                 fill='currentColor'
@@ -40,7 +40,7 @@ export default function Header() {
         <div className='flex items-center'>
           <a href='#' className='ml-3'>
             <svg
-              className='w-6 h-6 text-tchatbox-topIcons hover:text-gray-200'
+              className='w-6 h-6 text-discord-topIcons hover:text-gray-200'
               aria-hidden='false'
               width='24'
               height='24'
@@ -57,7 +57,7 @@ export default function Header() {
           </a>
           <a href='#' className='ml-3'>
             <svg
-              className='w-6 h-6 text-tchatbox-topIcons hover:text-gray-200'
+              className='w-6 h-6 text-discord-topIcons hover:text-gray-200'
               aria-hidden='false'
               width='24'
               height='24'
@@ -71,7 +71,7 @@ export default function Header() {
           </a>
           <a href='#' className='ml-3'>
             <svg
-              className='w-6 h-6 text-tchatbox-topIcons hover:text-gray-200'
+              className='w-6 h-6 text-discord-topIcons hover:text-gray-200'
               aria-hidden='false'
               width='24'
               height='24'
@@ -104,11 +104,11 @@ export default function Header() {
               <input
                 type='text'
                 placeholder='Search'
-                className='w-40 rounded bg-gray-900 placeholder-tchatbox-200 p-1 focus:outline-none leading-normal text-xs'
+                className='w-40 rounded bg-gray-900 placeholder-discord-200 p-1 focus:outline-none leading-normal text-xs'
               />
               <span>
                 <svg
-                  className='absolute right-0 top-0 w-4 h-4 text-tchatbox-200 mr-2'
+                  className='absolute right-0 top-0 w-4 h-4 text-discord-200 mr-2'
                   style={{ top: '6px' }}
                   aria-hidden='false'
                   width='24'
@@ -125,7 +125,7 @@ export default function Header() {
           </a>
           <a href='#' className='ml-3'>
             <svg
-              className='w-6 h-6 text-tchatbox-topIcons hover:text-gray-200'
+              className='w-6 h-6 text-discord-topIcons hover:text-gray-200'
               aria-hidden='false'
               width='24'
               height='24'
@@ -140,7 +140,7 @@ export default function Header() {
           </a>
           <a href='#' className='ml-3'>
             <svg
-              className='w-6 h-6 text-tchatbox-topIcons hover:text-gray-200'
+              className='w-6 h-6 text-discord-topIcons hover:text-gray-200'
               aria-hidden='false'
               width='24'
               height='24'

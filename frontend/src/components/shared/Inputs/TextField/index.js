@@ -8,7 +8,7 @@ export default function TextField({ label, ...props }) {
   return (
     <div className={fieldClass}>
       {error != null && touched && (
-        <span className='text-tchatbox-red text-xs'>{error}</span>
+        <span className='text-discord-red text-xs'>{error}</span>
       )}
       <label className={labelClass} htmlFor={name}>
         {label}

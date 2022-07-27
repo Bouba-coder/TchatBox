@@ -11,9 +11,9 @@
     "tailwind"
   ],
   "license": "MIT",
-  "name": "tchatbox",
+  "name": "react-webpack-5-tailwind-2",
   "version": "1.0.1",
-  "description": "Tchatbox is a simple app to chat with your friends. It's a React boilerplate with TailwindCSS and Webpack.",
+  "description": "Webpack 5 boilerplate with React 17, Tailwind 2, using babel, sass, with HMR and an optimized production build",
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.2",
     "add": "^2.0.6",

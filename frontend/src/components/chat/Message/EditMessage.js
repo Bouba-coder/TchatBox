@@ -84,11 +84,11 @@ export default function EditMessage({ chat, onClose }) {
 
   return (
     <div className='w-full flex'>
-      <div className='relative w-full bg-tchatbox-chatInputBg flex items-center m-4 rounded-lg p-1 mb-5'>
-        <div className='w-full flex flex-1 bg-tchatbox-chatInputBg'>
+      <div className='relative w-full bg-discord-chatInputBg flex items-center m-4 rounded-lg p-1 mb-5'>
+        <div className='w-full flex flex-1 bg-discord-chatInputBg'>
           <input
             type='text'
-            className='flex-1 bg-tchatbox-chatInputBg placeholder-tchatbox-200 p-1 text-tchatbox-100 text-sm focus:outline-none leading-normal'
+            className='flex-1 bg-discord-chatInputBg placeholder-discord-200 p-1 text-discord-100 text-sm focus:outline-none leading-normal'
             value={textMessage}
             onChange={(e) => setTextMessage(e.target.value)}
             onKeyDown={handleInputSubmit}
@@ -96,7 +96,7 @@ export default function EditMessage({ chat, onClose }) {
         </div>
         <div className='flex items-center'>
           <div>
-            <button className='flex items-center p-2 text-tchatbox-topIcons hover:text-tchatbox-100  rounded-lg inline-block'>
+            <button className='flex items-center p-2 text-discord-topIcons hover:text-discord-100  rounded-lg inline-block'>
               <svg
                 className='w-6 h-6 text-center mx-auto'
                 xmlns='http://www.w3.org/2000/svg'
@@ -121,14 +121,14 @@ export default function EditMessage({ chat, onClose }) {
           escape to{' '}
           <span
             onClick={() => onClose()}
-            className='text-tchatbox-textLink hover:underline cursor-pointer'
+            className='text-discord-textLink hover:underline cursor-pointer'
           >
             cancel
           </span>{' '}
           • enter to{' '}
           <span
             onClick={() => onClose()}
-            className='text-tchatbox-textLink hover:underline cursor-pointer'
+            className='text-discord-textLink hover:underline cursor-pointer'
           >
             save
           </span>

@@ -28,7 +28,7 @@ export default function EmptyChat({ room, user }) {
           height={150}
           width={150}
         />
-        <button className='mt-4 bg-tchatbox-experiment500 hover:bg-tchatbox-experiment500Disabled transition-colors duration-300 text-white text-sm py-2 px-3 rounded-mdx focus:outline-none'>
+        <button className='mt-4 bg-discord-experiment500 hover:bg-discord-experiment500Disabled transition-colors duration-300 text-white text-sm py-2 px-3 rounded-mdx focus:outline-none'>
           Wave to {userName}
         </button>
       </div>

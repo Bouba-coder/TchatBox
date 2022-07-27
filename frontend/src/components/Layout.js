@@ -1,6 +1,6 @@
 import React from 'react'
 import ProfileWidget from './ProfileWidget'
-import { Me } from '../../hooks/reactQuery'
+import { Me } from '../hooks/reactQuery'
 
 export default function Layout({ Component, user, ...props }) {
   const { data: me } = Me(user?.user)
