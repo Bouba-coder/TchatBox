@@ -156,7 +156,7 @@ export default function Card({ user, onClose }) {
           </div>
         </div>
         <div className='w-full flex flex-row justify-end pt-2 pr-2'>
-          <button onClick={logoutHandler} className='item-centers'>
+          <button onClick={() => logoutHandler()} className='item-centers'>
             <span className='ml-1 text-sm font-medium tracking-tight text-red-400'>
               Log Out
             </span>

@@ -16,7 +16,9 @@ import {
 
 export function PendingRequests() {
   return useQuery(PENDING_REQUESTS_KEY, () => {
-    return getPendingRequestsApi().then((res) => res.data)
+    return getPendingRequestsApi().then((res) => {
+      return res.data
+    })
   })
 }
 

@@ -6,9 +6,9 @@ import TextField from '../../components/shared/Inputs/TextField'
 import { register } from '../../api/auth'
 import { ME_PAGE } from '../../constants/history.constants'
 import apiErrorHandler from '../../utils/apiErrorHandler'
-import TchatBox from '../../assets/tchatbox_logo.svg' 
-
+import TchatBox from '../../assets/tchatbox_logo.svg'
 import { useAppState } from '../../context/app-state-context'
+import ReactGA from 'react-ga'
 
 export default function Index() {
   const history = useHistory()
@@ -19,10 +19,18 @@ export default function Index() {
       const { data } = await register(values)
       console.log('register1', data)
       if (data) {
+        ReactGA.event({
+          category: 'User',
+          action: 'Created an Account',
+        })
         setAppState({ user: data })
         history.push(ME_PAGE)
       }
     } catch (error) {
+      ReactGA.exception({
+        description: apiErrorHandler(error),
+        fatal: true,
+      })
       setErrors(apiErrorHandler(error))
     }
   }
@@ -33,7 +41,7 @@ export default function Index() {
         to='/'
         className='z-10 text-white mt-16 sm:self-start mx-auto sm:ml-8 sm:mt-8'
       >
-       <TchatBox className='w-24 h-24 text-center mx-auto' />
+        <TchatBox className='w-24 h-24 text-center mx-auto' />
       </Link>
 
       <div className='z-10 bg-tchatbox-semi600 w-full sm:w-4/6 md:w-4/6 lg:w-2/6 rounded-md p-5 m-12 flex flex-row mx-auto mt-16'>

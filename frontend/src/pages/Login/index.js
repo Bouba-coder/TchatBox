@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { Formik, Form } from 'formik'
 import LoginSchema from '../../validation/login.schema'
@@ -9,22 +9,34 @@ import apiErrorHandler from '../../utils/apiErrorHandler'
 import LoadingCircle from '../../assets/loading_circle_icon.svg'
 import TchatBox from '../../assets/tchatbox_logo.svg'
 import { useAppState } from '../../context/app-state-context'
+import ReactGA from 'react-ga'
 
 export default function Index() {
   const history = useHistory()
-  const { setAppState } = useAppState()
+  const { appState, setAppState } = useAppState()
+
+  useEffect(() => {
+    if (appState?.user) {
+      history.push(ME_PAGE)
+    }
+  }, [appState?.user, history])
 
   async function handleLoginSubmit(values, { setErrors }) {
     try {
-      console.log('login1', values)
       const { data } = await login(values)
-      console.log('login2', data)
       if (data) {
+        ReactGA.event({
+          category: 'User',
+          action: 'Created an Account',
+        })
         setAppState({ user: data })
         history.push(ME_PAGE)
       }
     } catch (error) {
-      console.log('error: ', error)
+      ReactGA.exception({
+        description: apiErrorHandler(error),
+        fatal: true,
+      })
       if (error.response.status === 401) {
         setErrors({ email: error.response.data.message })
       } else {

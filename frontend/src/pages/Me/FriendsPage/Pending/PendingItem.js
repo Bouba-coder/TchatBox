@@ -2,8 +2,8 @@ import React from 'react'
 import { useQueryClient } from 'react-query'
 import CloseIcon from '../../../../assets/close_icon.svg'
 import MarkIcon from '../../../../assets/mark_icon.svg'
-import TchatBox from '../../../../assets/tchatbox_logo.svg' 
-
+import TchatBox from '../../../../assets/tchatbox_logo.svg'
+import ReactGA from 'react-ga'
 import { isIncoming, pendingUserName } from '../utils'
 import {
   PENDING_REQUESTS_KEY,
@@ -17,6 +17,7 @@ import {
 import { GetMe } from '../../../../hooks/actions'
 import getSocket from '../../../../api/socket'
 import { ME_SOCKET } from '../../../../constants/socket.routes'
+import apiErrorHandler from '../../../../utils/apiErrorHandler'
 
 const PENDING_WAY = {
   INCOMING: 'Incoming Friend Request',
@@ -61,6 +62,10 @@ export default function PendingItem({ user, pending, toggleModal }) {
 
     try {
       const result = await acceptPendingRequestApi(pending.id)
+      ReactGA.event({
+        category: 'Friend Request',
+        action: 'Accepted Friend Request',
+      })
       cache.invalidateQueries(PENDING_REQUESTS_KEY)
       cache.invalidateQueries(ALL_FRIENDS_KEY)
 
@@ -70,6 +75,10 @@ export default function PendingItem({ user, pending, toggleModal }) {
 
       setIsLoading(false)
     } catch (err) {
+      ReactGA.exception({
+        description: apiErrorHandler(err),
+        fatal: true,
+      })
       setIsLoading(false)
     }
   }
