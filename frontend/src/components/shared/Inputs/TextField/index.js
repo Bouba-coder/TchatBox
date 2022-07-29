@@ -2,7 +2,7 @@ import React from 'react'
 import { useField } from 'formik'
 
 export default function TextField({ label, ...props }) {
-  const { fieldClass, labelClass, inputClass, name, type } = props
+  const { fieldClass, labelClass, inputClass, name, type, value } = props
   const [field, { error, touched }] = useField(props)
 
   return (
@@ -13,7 +13,7 @@ export default function TextField({ label, ...props }) {
       <label className={labelClass} htmlFor={name}>
         {label}
       </label>
-      <input className={inputClass} {...field} name={name} type={type} />
+      <input className={inputClass} {...field} name={name} type={type} value={value} />
     </div>
   )
 }

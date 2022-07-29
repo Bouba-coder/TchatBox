@@ -76,7 +76,7 @@ export default function PendingItem({ user, pending, toggleModal }) {
 
   return (
     <li
-      className='p-2 py-3 hover:bg-tchatbox-itemHover cursor-pointer border-t-1 border-tchatbox-backgroundModifierAccent'
+      className='p-2 py-3 hover:bg-gray-100 cursor-pointer border-t-1 border-gray-700'
       onClick={() => {
         toggleModal(pending)
       }}
@@ -89,7 +89,7 @@ export default function PendingItem({ user, pending, toggleModal }) {
                 isIncoming(user, pending)
                   ? pending?.from?.color
                   : pending?.to?.color
-              } text-white hover:text-tchatbox-100 rounded-full`}
+              } hover:text-tchatbox-100 rounded-full`}
             >
               <TchatBox className='w-5 h-5' />
             </div>

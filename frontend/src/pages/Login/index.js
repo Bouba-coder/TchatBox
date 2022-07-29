@@ -42,10 +42,10 @@ export default function Index() {
         <TchatBox className='w-24 h-24 text-center mx-auto' />
       </Link>
 
-      <div className='z-10 bg-tchatbox-semi600 w-full sm:w-4/6 md:w-4/6 lg:w-4/6 xl:w-2/5 rounded-md p-5 m-12 flex flex-row mx-auto mt-16'>
+      <div className='z-10 bg-white w-full sm:w-4/6 md:w-4/6 lg:w-4/6 xl:w-2/5 rounded-md p-5 m-12 flex flex-row mx-auto mt-16'>
         <div className='flex flex-col w-full'>
-          <h4 className='text-xl text-white font-semibold'>Welcome back!</h4>
-          <p className='text-sm text-tchatbox-mainText'>
+          <h4 className='text-xl text-black font-semibold'>Welcome back!</h4>
+          <p className='text-sm text-black'>
             We're so excited to see you again!
           </p>
 

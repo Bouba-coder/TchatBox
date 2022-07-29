@@ -40,7 +40,7 @@ export default function Message({
 
     return (
       <>
-        <span className='text-tchatbox-popOutHeader text-xxs'> (edited)</span>
+        <span className='message-edited-label italic text-xxs'> (edited)</span>
       </>
     )
   }
@@ -145,10 +145,7 @@ export default function Message({
       )}
 
       {showSetting && (
-        <ul className='flex bg-tchatbox-600 absolute -top-3 right-5 hover:shadow-lg rounded-md'>
-          <li className='mr-2 p-1 cursor-pointer hover:bg-tchatbox-itemHover'>
-            <AddEmojiIcon className='w-5 h-5 text-tchatbox-500' />
-          </li>
+        <ul className='flex bg-white absolute -top-3 right-5 hover:shadow-lg rounded-md'>
           {isAuthor && (
             <li
               className='mr-2 p-1 cursor-pointer hover:bg-tchatbox-itemHover'

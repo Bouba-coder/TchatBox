@@ -21,22 +21,11 @@ export default function EmptyChat({ room, user }) {
         </div>
       </div>
       <div className='flex flex-col justify-start'>
-        <h1 className='text-white text-3xl font-bold'>{userName}</h1>
-        <p className='text-tchatbox-mainText text-sm'>
+        <h1 className='text-black text-3xl font-bold'>{userName}</h1>
+        <p className='text-black text-sm'>
           This is the beginning of your direct message history with{' '}
           <span className='font-semibold'>@{userName}.</span>
         </p>
-        <div className='flex mt-4'>
-          <p className='text-tchatbox-mainText text-sm'>No servers in common</p>
-          <div className='flex ml-8'>
-            <button className='bg-tchatbox-darkButton1 transition-colors duration-300 hover:bg-tchatbox-popOutHeader text-white text-smx py-1 px-3 rounded-mdx focus:outline-none'>
-              Remove friend
-            </button>
-            <button className='ml-2 bg-tchatbox-darkButton1 transition-colors duration-300 hover:bg-tchatbox-popOutHeader text-white text-smx py-1 px-3 rounded-mdx focus:outline-none'>
-              Block
-            </button>
-          </div>
-        </div>
       </div>
     </div>
   )

@@ -1,12 +1,10 @@
 import React from 'react'
-import NoOnlineIcon from '../../../assets/no_online_friends.svg'
 
 function EmptyState() {
   return (
     <div className='flex flex-col justify-center w-full items-center'>
-      <NoOnlineIcon className='fill-current w-85  h-85' />
-      <p className='p-2 text-tchatbox-popOutHeader mt-6'>
-        No one's around to play with Wumpus.
+      <p className='p-2 text-gray-600 text-xl mt-6'>
+        You have no online friends.
       </p>
     </div>
   )

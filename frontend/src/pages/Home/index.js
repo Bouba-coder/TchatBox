@@ -9,7 +9,7 @@ export default function Index({ ProfileWidgetComponent }) {
     <div className='flex'>
       <div className='flex flex-1 flex-col min-h-screen h-screen'>
         <Header ProfileWidgetComponent={ProfileWidgetComponent} />
-        <div className='flex-1 flex overflow-y-hidden bg-tchatbox-600'>
+        <div className='flex-1 flex overflow-y-hidden bg-red-600'>
           <InnerChannels />
           <MessageContainer />
           <div className='flex justify-between'>

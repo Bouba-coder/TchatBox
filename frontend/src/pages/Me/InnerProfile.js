@@ -10,7 +10,7 @@ import TchatBox from '../../assets/tchatbox_logo.svg'
 export default function Header({ ProfileWidgetComponent, location }) {
   const { pathname } = location
   return (
-    <div className='relative w-96 bg-tchatbox-700 flex flex-col items-center border-b border-tchatbox-900  scrollbar--show--hide channels--scrollbar justify-between'>
+    <div className='relative w-96 bg-white flex flex-col items-center border-b border-tchatbox-900  scrollbar--show--hide channels--scrollbar justify-between'>
       <div className='flex flex-col w-full'>
         <div className='px-3 w-full mt-2 flex flex-row  items-center'>
           <Link
@@ -26,13 +26,6 @@ export default function Header({ ProfileWidgetComponent, location }) {
           >
             <TchatBox className='w-7 h-7 text-center mx-auto' />
           </Link>
-          <form className='flex-1 ml-2'>
-            <input
-              type='text'
-              placeholder='Find or start a conversation'
-              className='rounded-smx w-full h-10 text-white p-1 pl-2 bg-gray-900 placeholder-tchatbox-200 focus:outline-none leading-normal text-xsl'
-            />
-          </form>
         </div>
         <ul className='p-2 mt-1 px-3 w-full'>
           <li
@@ -48,13 +41,6 @@ export default function Header({ ProfileWidgetComponent, location }) {
               }
             )}
           >
-            <div className='flex justify-start'>
-              <FriendsIcon className='w-5 h-5 mr-3' />
-              <NavLink to={ME_PAGE} className='w-full text-sm font-semibold'>
-                <span className='inline-block'></span>
-                Friends
-              </NavLink>
-            </div>
           </li>
         </ul>
         <div className='flex-1 flex overflow-y-hidden'>

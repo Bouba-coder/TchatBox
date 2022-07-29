@@ -16,9 +16,8 @@ import { useModal } from '../../../context/modal-context/modal-context'
 function EmptyState() {
   return (
     <div className='flex flex-col flex-1 justify-center w-full items-center'>
-      <AddFriendIcon className='fill-current w-85 h-85' />
-      <p className='p-2 text-tchatbox-popOutHeader mt-6'>
-        Wumpus is waiting on friends. You don’t have to though!
+      <p className='p-2 text-gray-600 text-xl mt-6'>
+        There are no pending friend requests at this time.
       </p>
     </div>
   )
@@ -26,7 +25,7 @@ function EmptyState() {
 
 const alertTitle = 'Friend request failed'
 const FRIEND_DESCRIPTION = {
-  DEFAULT: "You can add a friend with their tchatbox Tag. It's cAsE sEnSitIvE!",
+  DEFAULT: "You can add a friend with their tchatbox Tag.",
   SUCCESS: (input) => `Success! Your friend request to ${input} was sent.`,
 }
 
@@ -115,7 +114,7 @@ export default function Online() {
         </p>
         <div
           className={classNames(
-            'w-full mt-4 bg-tchatbox-deprecatedTextInput border-1 border-tchatbox-deprecatedTextInputBorder w-full rounded-lg',
+            'w-full mt-4 bg-tchatbox-deprecatedTextInput border-1 border-tchatbox-deprecatedTextInputBorder rounded-lg',
             {
               'border-tchatbox-greenSuccess': successInvite,
               'border-tchatbox-deprecatedTextInputBorder': !successInvite,
@@ -130,7 +129,7 @@ export default function Online() {
               placeholder='Enter a Username#0000'
               maxLength='37'
               className={classNames(
-                'w-full text-tchatbox-100 p-3 bg-tchatbox-deprecatedTextInput placeholder-tchatbox-200 focus:outline-none leading-normal text-base'
+                'w-full text-black p-3 bg-gray-100 placeholder-gray-500 focus:outline-none leading-normal text-base'
               )}
             />
             <button
@@ -142,7 +141,7 @@ export default function Online() {
                 {
                   'bg-tchatbox-experiment500Disabled': !!input === false,
                   'cursor-not-allowed': !!input === false,
-                  'bg-tchatbox-experiment500': !!input,
+                  'bg-green-500': !!input,
                 }
               )}
             >

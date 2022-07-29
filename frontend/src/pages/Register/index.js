@@ -28,7 +28,7 @@ export default function Index() {
   }
 
   return (
-    <div className='flex flex-col   relative bg-tchatbox-semi600 h-screen w-full'>
+    <div className='flex flex-col   relative bg-white h-screen w-full'>
       <Link
         to='/'
         className='z-10 text-white mt-16 sm:self-start mx-auto sm:ml-8 sm:mt-8'
@@ -36,9 +36,9 @@ export default function Index() {
        <TchatBox className='w-24 h-24 text-center mx-auto' />
       </Link>
 
-      <div className='z-10 bg-tchatbox-semi600 w-full sm:w-4/6 md:w-4/6 lg:w-2/6 rounded-md p-5 m-12 flex flex-row mx-auto mt-16'>
+      <div className='z-10 bg-white w-full sm:w-4/6 md:w-4/6 lg:w-2/6 rounded-md p-5 m-12 flex flex-row mx-auto mt-16'>
         <div className='flex flex-col w-full'>
-          <h4 className='text-xl text-white font-semibold text-center'>
+          <h4 className='text-xl text-black font-semibold text-center'>
             Create an account
           </h4>
 
@@ -80,6 +80,18 @@ export default function Index() {
                   label='PASSWORD'
                   name='password'
                   type='password'
+                />
+
+              <TextField        
+                  fieldClass='mb-4 mt-4'
+                  labelClass='block text-tchatbox-sideBarChannels font-semibold text-xs mb-2'
+                  inputClass='focus:outline-none border-tchatbox-transparentBlack1 border-1
+                   focus:ring-2 focus:ring-blue-400 bg-tchatbox-transparentBlack2 text-white
+                    w-full rounded py-1 px-2'
+                  label='PASSWORD'
+                  name='password'
+                  type='password'
+                  value="React, Node, Mongo, Français"
                 />
                 <button
                   type='submit'

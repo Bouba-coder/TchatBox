@@ -46,7 +46,7 @@ export default function Friends() {
         page={page}
         pendingRequests={pendingRequestsData?.length}
       />
-      <div className='flex-1 flex bg-tchatbox-selectMuted min-h-screen h-screen'>
+      <div className='flex-1 flex bg-white min-h-screen h-screen'>
         <div className='flex flex-1'>
           {showSubPage(page, setPage, { pendingRequestsData })}
         </div>

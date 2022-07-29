@@ -57,7 +57,7 @@ export default function PendingItem({ user, friend }) {
 
   return (
     <li
-      className='p-2 py-3 hover:bg-tchatbox-itemHover cursor-pointer border-t-1 border-tchatbox-backgroundModifierAccent'
+      className='p-2 py-3 hover:bg-gray-100 cursor-pointer border-t-1 border-gray-700'
       onClick={openDM}
     >
       <div className='flex justify-between items-center'>
@@ -68,17 +68,15 @@ export default function PendingItem({ user, friend }) {
                 isIncoming(user, friend)
                   ? friend?.from?.color
                   : friend?.to?.color
-              } text-white hover:text-tchatbox-100 rounded-full`}
+              } text-black hover:text-tchatbox-100 rounded-full`}
             >
               <TchatBox className='w-5 h-5' />
             </div>
-            <span className='bg-tchatbox-green w-3 h-3 rounded-full absolute right-0 bottom-0 -mr-1 mb-1'></span>
           </div>
-          <div className='flex items-start flex-col ml-4'>
-            <p className='text-white text-sm font-bold'>
+          <div className='flex items-center flex-col ml-4'>
+            <p className='text-black text-sm font-bold'>
               {friendObject(user, friend).username}
             </p>
-            <p className='text-tchatbox-mainText text-xs'>{'online'}</p>
           </div>
         </div>
 
@@ -90,12 +88,8 @@ export default function PendingItem({ user, friend }) {
             {isLoading ? (
               <LoadingCircle className='animate-spin h-5 w-5 text-tchatbox-100' />
             ) : (
-              <DMIcon className='fill-current w-5 h-5 text-tchatbox-topIcons hover:text-tchatbox-100' />
+              <DMIcon className='fill-current w-5 h-5 text-black' />
             )}
-          </button>
-
-          <button className='flex items-center justify-center p-2 mx-1 rounded-full bg-tchatbox-bgSecondary focus:outline-none'>
-            <ThreeDotIcon className='fill-current w-5 h-5 text-tchatbox-topIcons hover:text-tchatbox-100' />
           </button>
         </div>
       </div>

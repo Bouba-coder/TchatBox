@@ -36,7 +36,6 @@ export default function DMList() {
               <span className='font-semibold text-xs uppercase tracking-wide cursor-default'>
                 DIRECT MESSAGES
               </span>
-              <PlusIcon className='fill-current w-4 h-4 text-tchatbox-500 cursor-pointer' />
             </div>
           </li>
         </ul>
