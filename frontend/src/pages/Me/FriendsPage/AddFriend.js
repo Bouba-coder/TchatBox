@@ -11,7 +11,7 @@ import { GetMe } from '../../../hooks/actions'
 import getSocket from '../../../api/socket'
 import { ME_SOCKET } from '../../../constants/socket.routes'
 import { useModal } from '../../../context/modal-context/modal-context'
-
+import ReactGA from 'react-ga'
 //
 function EmptyState() {
   return (
@@ -81,6 +81,10 @@ export default function Online() {
     try {
       const result = await sendFriendRequest({ username, shortId })
       setInput('')
+      ReactGA.event({
+        category: 'Friend Request',
+        action: 'Send Friend Request',
+      })
       setFriendDescription(FRIEND_DESCRIPTION.SUCCESS(input))
       setSuccessInvite(true)
 
@@ -91,6 +95,10 @@ export default function Online() {
       })
     } catch (e) {
       const result = apiErrorHandler(e)
+      ReactGA.exception({
+        description: result,
+        fatal: true,
+      })
       setAlertMessage(result)
       showAlert()
       setSuccessInvite(false)
