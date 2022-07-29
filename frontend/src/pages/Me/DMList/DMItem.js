@@ -68,7 +68,7 @@ export default function DMItem({ user, room, match }) {
   return (
     <li
       className={classNames(
-        'w-full px-1 py-1 hover:bg-tchatbox-itemHover rounded cursor-pointer border-t-1 border-tchatbox-backgroundModifierAccent',
+        'w-full px-1 py-1 hover:bg-gray-100 rounded cursor-pointer border-t-1 border-tchatbox-backgroundModifierAccent',
         {
           'bg-tchatbox-itemHover': currentPath(),
         }
@@ -83,17 +83,18 @@ export default function DMItem({ user, room, match }) {
             <div
               className={`flex justify-center items-center w-8 h-8 bg-tchatbox-${
                 friendObject(user, room).color
-              } text-white hover:text-tchatbox-100 rounded-full`}
+              } text-white hover:text-red-100 rounded-full`}
             >
-              <TchatBox className='w-5 h-5' />
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='m-auto text-white fill-current h-5 w-5'>
+                <path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c39.77 0 72 32.24 72 72S295.8 272 256 272c-39.76 0-72-32.24-72-72S216.2 128 256 128zM256 448c-52.93 0-100.9-21.53-135.7-56.29C136.5 349.9 176.5 320 224 320h64c47.54 0 87.54 29.88 103.7 71.71C356.9 426.5 308.9 448 256 448z"/>
+              </svg> 
             </div>
-            <span className='bg-tchatbox-green w-3 h-3 rounded-full absolute right-0 bottom-0 -mr-1 mb-1'></span>
           </div>
           <div className='flex items-start items-center ml-4'>
             <p
               className={classNames(' text-base', {
                 'text-white': currentPath(),
-                'text-tchatbox-sideBarChannels': !currentPath(),
+                'text-gray-500': !currentPath(),
               })}
             >
               {friendObject(user, room).username}

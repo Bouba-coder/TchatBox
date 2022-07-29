@@ -34,7 +34,7 @@ export default function DMList() {
           <li className='text-tchatbox-sideBarChannels hover:text-tchatbox-100 mt-3'>
             <div className='flex justify-between items-center px-3 focus:outline-none '>
               <span className='font-semibold text-xs uppercase tracking-wide cursor-default'>
-                DIRECT MESSAGES
+                MESSAGES
               </span>
             </div>
           </li>

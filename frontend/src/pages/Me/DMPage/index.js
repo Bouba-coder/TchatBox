@@ -25,7 +25,7 @@ export default function Index() {
   return (
     <div className='flex flex-1 flex-col min-h-screen h-screen'>
       <Header room={room} user={user} />
-      <div className='flex-1 flex overflow-y-hidden bg-tchatbox-600'>
+      <div className='flex-1 flex overflow-y-hidden bg-black'>
         <MessageContainer room={room} isLoading={isLoading} user={user} />
         {/* <div className='flex justify-between'>
           <OnlineUsers />

@@ -17,13 +17,10 @@ export default function Header({ user, room }) {
 
   return (
     <div className='flex text-white h-12 border-b-1 border-tchatbox-900'>
-      <div className='flex-1 flex items-center justify-between bg-tchatbox-600 border-b border-tchatbox-900 px-4'>
+      <div className='flex-1 flex items-center justify-between bg-black border-b border-tchatbox-900 px-4'>
         <div className='flex items-center'>
-          <div className='text-tchatbox-200 text-2xl'>
-            <AtSignIcon className='w-6 h-6' />
-          </div>
           <h5 className='flex justify-start items-center ml-2 cursor-pointer text-sm text-white font-bold'>
-            {userName} <OfflineStatusIcon className='w-4 h-4 ml-1' />
+            {userName}
           </h5>
         </div>
       </div>

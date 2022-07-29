@@ -28,7 +28,7 @@ export default function Index() {
   }
 
   return (
-    <div className='flex flex-col   relative bg-white h-screen w-full'>
+    <div className='flex flex-col relative bg-white h-screen w-full'>
       <Link
         to='/'
         className='z-10 text-white mt-16 sm:self-start mx-auto sm:ml-8 sm:mt-8'
@@ -53,7 +53,7 @@ export default function Index() {
                   fieldClass='mb-4 mt-4'
                   labelClass='block text-tchatbox-sideBarChannels font-semibold text-xs mb-2'
                   inputClass='focus:outline-none border-tchatbox-transparentBlack1 border-1
-                   focus:ring-2 focus:ring-blue-400 bg-tchatbox-transparentBlack2 text-white
+                   focus:ring-2 focus:ring-blue-400 bg-tchatbox-transparentBlack2 text-black
                     w-full rounded py-1 px-2'
                   label='EMAIL'
                   name='email'
@@ -64,7 +64,7 @@ export default function Index() {
                   fieldClass='mb-4 mt-4'
                   labelClass='block text-tchatbox-sideBarChannels font-semibold text-xs mb-2'
                   inputClass='focus:outline-none border-tchatbox-transparentBlack1 border-1
-                   focus:ring-2 focus:ring-blue-400 bg-tchatbox-transparentBlack2 text-white
+                   focus:ring-2 focus:ring-blue-400 bg-tchatbox-transparentBlack2 text-black
                     w-full rounded py-1 px-2'
                   label='USERNAME'
                   name='username'
@@ -75,27 +75,15 @@ export default function Index() {
                   fieldClass='mb-4 mt-4'
                   labelClass='block text-tchatbox-sideBarChannels font-semibold text-xs mb-2'
                   inputClass='focus:outline-none border-tchatbox-transparentBlack1 border-1
-                   focus:ring-2 focus:ring-blue-400 bg-tchatbox-transparentBlack2 text-white
+                   focus:ring-2 focus:ring-blue-400 bg-tchatbox-transparentBlack2 text-back
                     w-full rounded py-1 px-2'
                   label='PASSWORD'
                   name='password'
                   type='password'
-                />
-
-              <TextField        
-                  fieldClass='mb-4 mt-4'
-                  labelClass='block text-tchatbox-sideBarChannels font-semibold text-xs mb-2'
-                  inputClass='focus:outline-none border-tchatbox-transparentBlack1 border-1
-                   focus:ring-2 focus:ring-blue-400 bg-tchatbox-transparentBlack2 text-white
-                    w-full rounded py-1 px-2'
-                  label='PASSWORD'
-                  name='password'
-                  type='password'
-                  value="React, Node, Mongo, Français"
                 />
                 <button
                   type='submit'
-                  className='w-full rounded p-2 mt-8 block bg-tchatbox-experiment500 hover:bg-tchatbox-experiment560 text-white font-semibold'
+                  className='w-full rounded p-2 mt-8 block bg-green-500 hover:bg-green-600 text-white font-semibold'
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (
@@ -130,7 +118,7 @@ export default function Index() {
             <Link
               to='/login'
               href='#'
-              className='text-xs text-tchatbox-textLink hover:underline'
+              className='text-xs text-black hover:underline'
             >
               Already have an account?
             </Link>

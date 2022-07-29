@@ -57,7 +57,7 @@ export default function PendingItem({ user, friend }) {
 
   return (
     <li
-      className='p-2 py-3 hover:bg-gray-100 cursor-pointer border-t-1 border-gray-700'
+      className='p-2 py-3 hover:bg-gray-100 cursor-pointer border-t-1 border-gray-500'
       onClick={openDM}
     >
       <div className='flex justify-between items-center'>
@@ -68,13 +68,15 @@ export default function PendingItem({ user, friend }) {
                 isIncoming(user, friend)
                   ? friend?.from?.color
                   : friend?.to?.color
-              } text-black hover:text-tchatbox-100 rounded-full`}
+              } text-gray-500 hover:text-tchatbox-100 rounded-full`}
             >
-              <TchatBox className='w-5 h-5' />
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='h-5 w-5 text-white fill-current'>
+                <path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c39.77 0 72 32.24 72 72S295.8 272 256 272c-39.76 0-72-32.24-72-72S216.2 128 256 128zM256 448c-52.93 0-100.9-21.53-135.7-56.29C136.5 349.9 176.5 320 224 320h64c47.54 0 87.54 29.88 103.7 71.71C356.9 426.5 308.9 448 256 448z"/>
+              </svg>
             </div>
           </div>
           <div className='flex items-center flex-col ml-4'>
-            <p className='text-black text-sm font-bold'>
+            <p className='text-gray-500 my-auto text-sm font-semibold'>
               {friendObject(user, friend).username}
             </p>
           </div>
@@ -88,7 +90,7 @@ export default function PendingItem({ user, friend }) {
             {isLoading ? (
               <LoadingCircle className='animate-spin h-5 w-5 text-tchatbox-100' />
             ) : (
-              <DMIcon className='fill-current w-5 h-5 text-black' />
+              <DMIcon className='fill-current w-5 h-5 text-gray-500' />
             )}
           </button>
         </div>

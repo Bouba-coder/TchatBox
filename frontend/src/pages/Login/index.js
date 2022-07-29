@@ -34,7 +34,7 @@ export default function Index() {
   }
 
   return (
-    <div className='flex flex-col  relative bg-teal-500 h-screen w-full'>
+    <div className='flex flex-col relative bg-white h-screen w-full'>
       <Link
         to='/'
         className='z-10 text-white mt-16 sm:self-start mx-auto sm:ml-8 sm:mt-8'
@@ -60,7 +60,7 @@ export default function Index() {
                   fieldClass='mb-4 mt-4'
                   labelClass='block text-tchatbox-500 font-semibold text-xs mb-2'
                   inputClass='focus:outline-none border-tchatbox-transparentBlack1 border-1
-                   focus:ring-2 focus:ring-blue-400 bg-tchatbox-transparentBlack2 text-white
+                   focus:ring-2 focus:ring-blue-400 bg-tchatbox-transparentBlack2 text-black
                     w-full rounded py-1 px-2'
                   label='EMAIL'
                   name='email'
@@ -70,7 +70,7 @@ export default function Index() {
                   fieldClass='mb-4 mt-4'
                   labelClass='block text-tchatbox-500 font-semibold text-xs mb-2'
                   inputClass='focus:outline-none border-tchatbox-transparentBlack1 border-1
-                   focus:ring-2 focus:ring-blue-400 bg-tchatbox-transparentBlack2 text-white
+                   focus:ring-2 focus:ring-blue-400 bg-tchatbox-transparentBlack2 text-black
                     w-full rounded py-1 px-2'
                   label='PASSWORD'
                   name='password'
@@ -78,14 +78,14 @@ export default function Index() {
                 />
                 <a
                   href='#'
-                  className='text-xs text-tchatbox-textLink hover:underline'
+                  className='text-xs text-black hover:underline'
                 >
                   Forgot your password?
                 </a>
 
                 <button
                   type='submit'
-                  className='transition-colors duration-300 focus:outline-none w-full rounded p-2 mt-8 block bg-tchatbox-experiment500 hover:bg-tchatbox-experiment500Disabled text-white font-semibold'
+                  className='transition-colors duration-300 focus:outline-none w-full rounded p-2 mt-8 block bg-green-500 hover:bg-green-600 text-white font-semibold'
                 >
                   {isSubmitting ? (
                     <LoadingCircle className='animate-spin h-5 w-5 text-white mx-auto' />
@@ -103,7 +103,7 @@ export default function Index() {
             </span>
             <Link
               to='/register'
-              className='text-xs text-tchatbox-textLink hover:underline'
+              className='text-xs text-black hover:underline'
             >
               Register
             </Link>

@@ -13,7 +13,7 @@ export default function Index({ ProfileWidgetComponent }) {
   const location = useLocation()
   return (
     <div className='flex'>
-      <div className='flex flex-1 flex min-h-screen h-screen w-full bg-tchatbox-700'>
+      <div className='flex flex-1 min-h-screen h-screen w-full bg-tchatbox-700'>
         {match?.url === ME_PAGE ? <Friends /> : <DMPage />}
         <InnerProfile
           ProfileWidgetComponent={ProfileWidgetComponent}

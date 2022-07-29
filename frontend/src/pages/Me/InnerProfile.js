@@ -10,21 +10,21 @@ import TchatBox from '../../assets/tchatbox_logo.svg'
 export default function Header({ ProfileWidgetComponent, location }) {
   const { pathname } = location
   return (
-    <div className='relative w-96 bg-white flex flex-col items-center border-b border-tchatbox-900  scrollbar--show--hide channels--scrollbar justify-between'>
+    <div className='relative w-96 bg-white border-l-1 border-gray-300 drop-shadow-xl min-h-screen flex flex-col items-center scrollbar--show--hide channels--scrollbar justify-between'>
       <div className='flex flex-col w-full'>
         <div className='px-3 w-full mt-2 flex flex-row  items-center'>
           <Link
             to={ME_PAGE}
             className={classNames(
-              'flex items-center mx-auto w-12 h-12 bg-tchatbox-800  hover:bg-tchatbox-indigo hover:text-white hover:rounded-2xlg duration-100 transition ease-linear inline-block',
+              'flex items-center mx-auto w-12 h-12 bg-black border-2 border-white hover:text-white hover:rounded-2xlg duration-100 transition ease-linear inline-block',
               {
                 'rounded-full text-tchatbox-100': !pathname.startsWith(ME_PAGE),
-                'bg-tchatbox-indigo text-white rounded-2xlg':
+                'bg-white text-white rounded-2xlg':
                   pathname.startsWith(ME_PAGE),
               }
             )}
           >
-            <TchatBox className='w-7 h-7 text-center mx-auto' />
+            <TchatBox className='h-10 w-10 mx-auto' />
           </Link>
         </div>
         <ul className='p-2 mt-1 px-3 w-full'>

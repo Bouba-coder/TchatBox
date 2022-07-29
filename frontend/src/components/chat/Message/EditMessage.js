@@ -84,28 +84,28 @@ export default function EditMessage({ chat, onClose }) {
 
   return (
     <div className='w-full flex'>
-      <div className='relative w-full bg-tchatbox-chatInputBg flex items-center m-4 rounded-lg p-1 mb-5'>
-        <div className='w-full flex flex-1 bg-tchatbox-chatInputBg'>
+      <div className='relative w-full bg-gray-700 flex items-center m-4 rounded-lg p-1 mb-5'>
+        <div className='w-full flex flex-1 bg-gray-700'>
           <input
             type='text'
-            className='flex-1 bg-tchatbox-chatInputBg placeholder-tchatbox-200 p-1 text-tchatbox-100 text-sm focus:outline-none leading-normal'
+            className='flex-1 bg-gray-700 placeholder-tchatbox-200 p-1 text-tchatbox-100 text-sm focus:outline-none leading-normal'
             value={textMessage}
             onChange={(e) => setTextMessage(e.target.value)}
             onKeyDown={handleInputSubmit}
           />
         </div>
-        <p className='text-white text-xxs absolute -bottom-4'>
+        <p className='text-black text-xxs absolute -bottom-4'>
           escape to{' '}
           <span
             onClick={() => onClose()}
-            className='text-tchatbox-textLink hover:underline cursor-pointer'
+            className='text-blue-600 hover:underline cursor-pointer'
           >
             cancel
           </span>{' '}
           • enter to{' '}
           <span
             onClick={() => onClose()}
-            className='text-tchatbox-textLink hover:underline cursor-pointer'
+            className='text-blue-600 hover:underline cursor-pointer'
           >
             save
           </span>

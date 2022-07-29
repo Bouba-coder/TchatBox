@@ -12,18 +12,17 @@ export default function ProfileWidget({ user }) {
   }
 
   return (
-    <div className='bg-tchatbox-secondPrimary py-2 px-1 flex items-center justify-between w-full '>
+    <div className='bg-black py-2 px-1 flex items-center justify-between w-full '>
       <div className='flex items-center'>
         <div className='relative flex justify-center'>
           <a
             href='#'
             className={`relative flex items-center mx-auto w-10 h-10 bg-tchatbox-${me?.user?.color} text-white hover:text-tchatbox-100 rounded-full inline-block`}
           >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='h-6 w-6 fill-current mx-auto text-white'>
+              <path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c39.77 0 72 32.24 72 72S295.8 272 256 272c-39.76 0-72-32.24-72-72S216.2 128 256 128zM256 448c-52.93 0-100.9-21.53-135.7-56.29C136.5 349.9 176.5 320 224 320h64c47.54 0 87.54 29.88 103.7 71.71C356.9 426.5 308.9 448 256 448z"/>
+            </svg>
           </a>
-          <span
-            className='bg-tchatbox-green w-3 h-3 rounded-full absolute right-0 bottom-0'
-            style={{ right: '-3px', bottom: '4px' }}
-          ></span>
         </div>
         <div className='flex items-center flex-col ml-2'>
           <p className='text-white text-xs font-bold'>{user?.username}</p>
@@ -34,7 +33,7 @@ export default function ProfileWidget({ user }) {
         <div>
           <a
             href='#'
-            className='flex items-center p-2 mx-auto text-tchatbox-topIcons hover:bg-tchatbox-selectMuted hover:text-tchatbox-mainTextHover rounded-lg inline-block'
+            className='flex items-center p-2 mx-auto text-tchatbox-topIcons hover:bg-tchatbox-selectMuted hover:text-tchatbox-mainTextHover rounded-lg'
             onClick={showSettingModal}
           >
             <svg aria-hidden='false' width='24' height='24' viewBox='0 0 24 24'>
