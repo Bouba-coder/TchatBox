@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import { useQueryClient } from 'react-query'
 import { useHistory } from 'react-router-dom'
-import ThreeDotIcon from '../../../../assets/three_dot_icon.svg'
 import DMIcon from '../../../../assets/dm_icon.svg'
-import TchatBox from '../../../../assets/tchatbox_logo.svg' 
 
 import { OPEN_ROOMS } from '../../../../constants/queryKeys'
 import { DM_URL } from '../../../../constants/history.constants'

@@ -68,9 +68,9 @@ export default function DMItem({ user, room, match }) {
   return (
     <li
       className={classNames(
-        'w-full px-1 py-1 hover:bg-gray-100 rounded cursor-pointer border-t-1 border-tchatbox-backgroundModifierAccent',
+        'w-full px-1 py-1 hover:bg-gray-100 rounded cursor-pointer border-t-1 border-gray-400',
         {
-          'bg-tchatbox-itemHover': currentPath(),
+          'bg-gray-200': currentPath(),
         }
       )}
       onClick={openDM}
@@ -93,7 +93,7 @@ export default function DMItem({ user, room, match }) {
           <div className='flex items-start items-center ml-4'>
             <p
               className={classNames(' text-base', {
-                'text-white': currentPath(),
+                'text-gray-500': currentPath(),
                 'text-gray-500': !currentPath(),
               })}
             >

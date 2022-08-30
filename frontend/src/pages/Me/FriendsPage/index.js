@@ -6,6 +6,7 @@ import Blocked from './Blocked'
 import Pending from './Pending'
 import All from './All'
 import { PendingRequests } from '../../../hooks/reactQuery'
+import Users from './Users'
 
 function showSubPage(page, setPage, componentData) {
   let component
@@ -26,8 +27,11 @@ function showSubPage(page, setPage, componentData) {
     case 'blocked':
       component = <Blocked />
       break
+    case 'users':
+        component = <Users />
+      break
     default:
-      component = <Online />
+      component = <All />
       break
   }
 

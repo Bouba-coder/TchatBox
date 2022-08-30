@@ -7,3 +7,7 @@ export const getProfile = (id) => {
 export const updateProfile = (data) => {
   return client.put('/api/v1/users/', data)
 }
+
+export const getUsers = () => {
+  return client.get('/api/v1/users')
+}

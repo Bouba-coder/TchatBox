@@ -64,6 +64,18 @@ export default function Friends({ setPage, page, pendingRequests = 0 }) {
             Blocked
           </a>
         </li>
+        <li className='ml-8'>
+          <a
+            href='#'
+            onClick={() => setPage('users')}
+            className={classNames('hover:text-green-300', {
+              'text-green-400': page === 'users',
+              'text-white': page !== 'users',
+            })}
+          >
+            Users
+          </a>
+        </li>
       </ul>
           <button
             onClick={() => setPage('add_friend')}
